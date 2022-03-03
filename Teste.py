@@ -8,7 +8,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.executors.pool import ProcessPoolExecutor
 
 #region api_id api_hash bot_token
-api_id = 
+api_id =3450517 
 api_hash = "6a74442377065a1922432a87be574088"
 bot_token = "5136747220:AAE76fzjeEeZ44w-Hc5OKsthFWlLVsky8zI"
 #endregion
