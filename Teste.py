@@ -8,9 +8,9 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.executors.pool import ProcessPoolExecutor
 
 #region api_id api_hash bot_token
-api_id =3450517 
-api_hash = "6a74442377065a1922432a87be574088"
-bot_token = "5136747220:AAE76fzjeEeZ44w-Hc5OKsthFWlLVsky8zI"
+api_id =
+api_hash = ""
+bot_token = ""
 #endregion
 
 PATH = 'cache/'
@@ -22,7 +22,7 @@ if not os.path.exists('thumbs'):
 
 helper = helpers()
 app = Client("my_account", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
-ADMIN_LIST = [1146062784] #users get whitelisted on the whitelist file, admin can add users to the whitelist using the bot.
+ADMIN_LIST = [] #users get whitelisted on the whitelist file, admin can add users to the whitelist using the bot.
 
 def is_admin(id):
     if id not in ADMIN_LIST:
@@ -83,7 +83,7 @@ def start_job(client, message):
     n = random.randint(10000000, 99999999) #add some random shit to allow people to download the same thing at the same time
     chat_id = message.chat.id
     text = message.text
-    splited = text.split(" | ")
+    splited = text.split(" ")
     test = text.split()     
     uid = message.from_user.id
     url = splited[0]
@@ -139,9 +139,7 @@ def delete_thumb(client, message):
 def help(client, message):
     message.reply_text("""
    
-hgfhtfjhyjktyjyt
-rthrtjhr
-hjrty
+Bot Exclusivo  Para @morenobahias
 
 
 
