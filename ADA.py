@@ -45,7 +45,9 @@ def handle_video(url, file_name, chat_id, caption, uid):
         except:
             remove(PATH + file_name)
             remove('thumbs/' + thumb)
-        # app.forward_messages(chatid, message.chat.id, message.message_id) #uncomment this if you want to forward everything somewhere
+        #  app.forward_messages(, message.chat.id, message.message_id)
+         # app.forward_messages(, message.chat.id, message.message_id)
+         # app.forward_messages(, message.chat.id, message.message_id)
         remove(PATH + file_name)
         remove('thumbs/' + thumb)
     else:
@@ -139,7 +141,8 @@ def delete_thumb(client, message):
 def help(client, message):
     message.reply_text("""
    
-Bot Exclusivo  Para @morenobahias
+Bot Exclusivo  THE BEST
+Fale Com  @anticongelante
 
 
 
